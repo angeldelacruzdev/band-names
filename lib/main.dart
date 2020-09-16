@@ -1,3 +1,4 @@
+import 'package:brand_names/pages/status.dart';
 import 'package:flutter/material.dart';
 
 import 'package:brand_names/pages/home.dart';
@@ -10,8 +11,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       debugShowCheckedModeBanner: false,
-      initialRoute: 'home',
-      routes: {'home': (_) => HomePage()},
+      initialRoute: 'status',
+      routes: {
+        'home': (_) => HomePage(),
+        'status': (_) => StatusPage(),
+      },
     );
   }
 }
